@@ -16,9 +16,9 @@
     Pink: hsl(356, 100%, 65%) - Green: hsl(162, 90%, 40%)
 
 */
-    --hue: 250;
+    --hue: 200;
     --first-color: hsl(var(--hue), 90%, 60%);
-    --first-color-alt: hsl(var(--hue), 82%, 56%);
+    --first-color-alt: hsl(var(--hue), 50%, 90%);
     --first-color-light: hsl(var(--hue), 40%, 80%);
     --title-color: hsl(var(--hue), 24%, 16%);
     --text-color: hsl(var(--hue), 8%, 45%);
@@ -60,8 +60,10 @@ html{
 }
 
 body{
+  height: 100vh;
   font-family: var(--body-font);
   /* background-color: var(--first-color); */
+  background-image: linear-gradient(to bottom, var(--first-color),var(--first-color-alt));
   color: var(--text-color);
   transition: background-color .4s;
 }

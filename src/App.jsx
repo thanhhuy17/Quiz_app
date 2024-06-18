@@ -1,7 +1,10 @@
+import Quiz from "./components/Quiz/Quiz"
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Quiz/>
+    </div>
   )
 }
 
