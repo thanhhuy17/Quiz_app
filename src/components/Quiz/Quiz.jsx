@@ -1,16 +1,24 @@
+import { useState } from 'react'
 import './Quiz.css'
+import { data } from '../../assets/data';
 
 const Quiz = () => {
+  // Use to sum answer correct
+  let[index, setIndex] = useState(0);
+  // Use to next questions
+  let [question, setQuestion] = useState(data[index])
+   
+
   return (
     <div className='container'>
         <h1>Quiz App</h1>
         <hr />
-        <h2>Which device is required for the Internet connection?</h2>
+        <h2>{index + 1}. {question.question}</h2>
         <ul>
-            <li>Modem</li>
-            <li>Router</li>
-            <li>LAN Cab</li>
-            <li>Pen Drive</li>
+            <li>{question.option1}</li>
+            <li>{question.option2}</li>
+            <li>{question.option3}</li>
+            <li>{question.option4}</li>
         </ul>
 
         <button>Next</button>
