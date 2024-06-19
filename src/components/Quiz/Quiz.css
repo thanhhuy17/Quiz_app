@@ -73,3 +73,13 @@
     font-size: var(--h2-font-size);
     font-weight: var(--font-medium);
 }
+
+.correct{
+    background-color: #33ce33;
+    color: var(--container-color);
+}
+
+.wrong{
+    background-color: #ce3833;
+    color: var(--container-color);
+}
